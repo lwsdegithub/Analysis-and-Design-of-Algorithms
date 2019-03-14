@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1552576185 source:c:\users\lws\desktop\helloworld\commonutils.cpp
+	"CommonUtils.hpp"
+	<iostream>
+
+1552576123 c:\users\lws\desktop\helloworld\commonutils.hpp
+
+1552575519 source:c:\users\lws\desktop\helloworld\findmaximumsubarray.cpp
+	"FindMaximumSubArray.hpp"
+	<stdlib.h>
+	<iostream>
+
+1552575230 c:\users\lws\desktop\helloworld\findmaximumsubarray.hpp
+
+1552576220 source:c:\users\lws\desktop\helloworld\main.cpp
+	<iostream>
+	"Sort.hpp"
+	"CommonUtils.hpp"
+	"FindMaximumSubArray.hpp"
+
+1552576068 c:\users\lws\desktop\helloworld\sort.hpp
+
+1552573833 source:c:\users\lws\desktop\helloworld\sort.cpp
+	"Sort.hpp"
+	<stdlib.h>
+
