@@ -1,4 +1,5 @@
 #include "Sort.hpp"
+#include "CommonUtils.hpp"
 #include <stdlib.h>
 /**
 ****—°‘Ò≈≈–Ú£¨‘≠÷∑≈≈–Ú
@@ -52,5 +53,26 @@ void MERGE_SORT(int *A,int f,int l){
         MERGE_SORT(A,f,m);
         MERGE_SORT(A,m+1,l);
         MERGE(A,f,m,l);
+    }
+}
+/**
+***øÏÀŸ≈≈–Ú
+**/
+int PARTION(int *A,int low,int high){
+    int pivot_value=A[low];
+    while(low<high){
+        while(high>low&&A[high]>=pivot_value) high--;
+        A[low]=A[high];
+        while(low<high&&A[low]<=pivot_value) low++;
+        A[high]=A[low];
+    }
+    A[low]=pivot_value;
+    return low;
+}
+void QUICK_SORT(int *A,int low,int high){
+    if(low<high){
+        int pa=PARTION(A,low,high);
+        QUICK_SORT(A,low,pa);
+        QUICK_SORT(A,pa+1,high);
     }
 }

@@ -23,3 +23,11 @@ void view_elem_location(int *A,int start,int end){
     }
     std::cout<<std::endl;
 }
+/**
+***交换元素数据
+**/
+void swap(int &a,int &b){
+    int temp=a;
+    a=b;
+    b=temp;
+}

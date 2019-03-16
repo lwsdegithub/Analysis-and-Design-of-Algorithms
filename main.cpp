@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdlib.h>
 #include "Sort.hpp"
 #include "CommonUtils.hpp"
 #include "FindMaximumSubArray.hpp"
@@ -6,11 +7,8 @@
 using namespace std;
 int main()
 {
-    int length=3;
-    int B[length]={2,4,-8};
-    int *result=FIND_MAXIMUM_SUBARRAY(B,0,length-1);
-    cout<<"low is: "<<result[0]<<",high is: "<<result[1]<<",sum is: "<<result[2]<<endl;
-    cout<<"the elements are:"<<endl;
-
-    return 0;
+    int A[12]={1,2,5,4,8,4,-4,56,78,-3,4,7};
+    cout<<sizeof(A)<<"\n";
+    QUICK_SORT(A,0,11);
+    view_elem(A,12);
 }

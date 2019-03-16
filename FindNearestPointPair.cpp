@@ -7,7 +7,7 @@ float dis(Point a,Point b){
     return d;
 }
 /**
-***O(n*2)复杂度,暴力求解
+***O(n**2)
 **/
 Point *FIND_NEAREST_POINT_PAIR(Point *points,int num){
     float distence=dis(points[0],points[1]);
@@ -15,7 +15,7 @@ Point *FIND_NEAREST_POINT_PAIR(Point *points,int num){
     for(int i=0;i<=num-1;i++){
         for(int j=i+1;j<=num;j++){
             float dtc=dis(points[i],points[j]);
-            if(dtc<distence){
+            if(dtc<distence&&j!=i){
                 distence=dtc;
                 a=i;
                 b=j;
