@@ -2,5 +2,5 @@
 #define COMMONUTILS_HPP_INCLUDED
 void view_elem(int *A,int length);
 void input_elem(int *A,int length);
-
+void view_elem_location(int *A,int start,int end);
 #endif // COMMONUTILS_HPP_INCLUDED

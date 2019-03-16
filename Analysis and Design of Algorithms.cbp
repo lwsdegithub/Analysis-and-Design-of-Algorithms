@@ -36,6 +36,8 @@
 		<Unit filename="CommonUtils.hpp" />
 		<Unit filename="FindMaximumSubArray.cpp" />
 		<Unit filename="FindMaximumSubArray.hpp" />
+		<Unit filename="FindNearestPointPair.cpp" />
+		<Unit filename="FindNearestPointPair.hpp" />
 		<Unit filename="Sort.cpp" />
 		<Unit filename="Sort.hpp" />
 		<Unit filename="main.cpp" />

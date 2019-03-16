@@ -17,3 +17,9 @@ void input_elem(int *A,int length){
         std::cin>>A[i];
     }
 }
+void view_elem_location(int *A,int start,int end){
+    for(int i=start;i<=end;i++){
+        std::cout<<A[i]<<",";
+    }
+    std::cout<<std::endl;
+}
