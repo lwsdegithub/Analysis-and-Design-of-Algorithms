@@ -4,11 +4,12 @@
 #include "CommonUtils.hpp"
 #include "FindMaximumSubArray.hpp"
 #include "FindNearestPointPair.hpp"
+#include "DynamicProgramming.hpp"
 using namespace std;
 int main()
 {
-    int A[12]={1,2,5,4,8,4,-4,56,78,-3,4,7};
-    cout<<sizeof(A)<<"\n";
-    QUICK_SORT(A,0,11);
-    view_elem(A,12);
+    int p[10]={1,5,8,9,10,17,17,20,24,30};
+    int *r=CUT_BOTTOM_TO_TOP(p,10);
+    for(int i=0;i<=10;i++)
+        cout<<r[i]<<",";
 }

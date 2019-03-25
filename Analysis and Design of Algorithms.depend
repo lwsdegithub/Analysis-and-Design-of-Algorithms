@@ -24,31 +24,32 @@
 	"Sort.hpp"
 	<stdlib.h>
 
-1552575519 source:c:\users\lws\desktop\analysis-and-design-of-algorithms\findmaximumsubarray.cpp
+1553440494 source:c:\users\lws\desktop\analysis-and-design-of-algorithms\findmaximumsubarray.cpp
 	"FindMaximumSubArray.hpp"
 	<stdlib.h>
 	<iostream>
 
 1552575230 c:\users\lws\desktop\analysis-and-design-of-algorithms\findmaximumsubarray.hpp
 
-1552726752 source:c:\users\lws\desktop\analysis-and-design-of-algorithms\main.cpp
+1553526573 source:c:\users\lws\desktop\analysis-and-design-of-algorithms\main.cpp
 	<iostream>
 	<stdlib.h>
 	"Sort.hpp"
 	"CommonUtils.hpp"
 	"FindMaximumSubArray.hpp"
 	"FindNearestPointPair.hpp"
+	"DynamicProgramming.hpp"
 
 1552725344 c:\users\lws\desktop\analysis-and-design-of-algorithms\sort.hpp
 
-1552725730 c:\users\lws\desktop\analysis-and-design-of-algorithms\commonutils.hpp
+1552923388 c:\users\lws\desktop\analysis-and-design-of-algorithms\commonutils.hpp
 
 1552727076 source:c:\users\lws\desktop\analysis-and-design-of-algorithms\sort.cpp
 	"Sort.hpp"
 	"CommonUtils.hpp"
 	<stdlib.h>
 
-1552725795 source:c:\users\lws\desktop\analysis-and-design-of-algorithms\commonutils.cpp
+1552923372 source:c:\users\lws\desktop\analysis-and-design-of-algorithms\commonutils.cpp
 	"CommonUtils.hpp"
 	<iostream>
 
@@ -59,4 +60,11 @@
 	<stdlib.h>
 
 1552716451 c:\users\lws\desktop\analysis-and-design-of-algorithms\findnearestpointpair.hpp
+
+1553527174 c:\users\lws\desktop\analysis-and-design-of-algorithms\dynamicprogramming.hpp
+
+1553526817 source:c:\users\lws\desktop\analysis-and-design-of-algorithms\dynamicprogramming.cpp
+	"DynamicProgramming.hpp"
+	<stdlib.h>
+	<iostream>
 

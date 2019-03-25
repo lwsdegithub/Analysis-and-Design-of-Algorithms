@@ -65,9 +65,9 @@ int* FIND_MAXIMUM_SUBARRAY_LINEAR(int *A,int length){
             ending_here_sum=A[j];
         }
         if(ending_here_sum>result[2]){
-            result[2]=ending_here_sum;
             result[0]=ending_here_low;
             result[1]=ending_here_high;
+            result[2]=ending_here_sum;
         }
     }
     return result;

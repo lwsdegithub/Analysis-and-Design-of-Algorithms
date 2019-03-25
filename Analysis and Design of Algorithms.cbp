@@ -34,10 +34,14 @@
 		</Compiler>
 		<Unit filename="CommonUtils.cpp" />
 		<Unit filename="CommonUtils.hpp" />
+		<Unit filename="DynamicProgramming.cpp" />
+		<Unit filename="DynamicProgramming.hpp" />
 		<Unit filename="FindMaximumSubArray.cpp" />
 		<Unit filename="FindMaximumSubArray.hpp" />
 		<Unit filename="FindNearestPointPair.cpp" />
 		<Unit filename="FindNearestPointPair.hpp" />
+		<Unit filename="RandomizedSelect.cpp" />
+		<Unit filename="RandomizedSelect.hpp" />
 		<Unit filename="Sort.cpp" />
 		<Unit filename="Sort.hpp" />
 		<Unit filename="main.cpp" />
