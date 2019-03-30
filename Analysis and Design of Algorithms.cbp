@@ -40,8 +40,8 @@
 		<Unit filename="FindMaximumSubArray.hpp" />
 		<Unit filename="FindNearestPointPair.cpp" />
 		<Unit filename="FindNearestPointPair.hpp" />
-		<Unit filename="RandomizedSelect.cpp" />
-		<Unit filename="RandomizedSelect.hpp" />
+		<Unit filename="Select.cpp" />
+		<Unit filename="Select.h" />
 		<Unit filename="Sort.cpp" />
 		<Unit filename="Sort.hpp" />
 		<Unit filename="main.cpp" />
