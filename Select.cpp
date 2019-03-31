@@ -1,6 +1,7 @@
 #include "Select.h"
 #include "Sort.hpp"
 #include <stdlib.h>
+#include "CommonUtils.hpp"
 
 #define STEP 5
 using namespace std;
@@ -17,9 +18,9 @@ int MEDIAN(int *A,int low,int high){
     int first_mids[array_num]={0};
 
     int num=0;
-    int sub[5]={0};
+    int sub[5]={0};//5
     for(int i=low;i<=high-last_array_length;i+=5){
-            /**save(copy) the sub array**/
+            /**save(copy) the sub array,the sub length is 5**/
             for(int j=0,k=i;j<=4;j++,k++){
                 sub[j]=A[k];
             }
@@ -27,6 +28,7 @@ int MEDIAN(int *A,int low,int high){
             INSERTION_SORT(sub,5);
             first_mids[num++]=sub[2];
     }
+    /**consider that the length of A is 4 or 13,last_array_length is 4 or 3**/
     if(last_array_length!=0){
         for(int j=0,k=high-last_array_length+1;j<=last_array_length-1;j++,k++){
             sub[j]=A[k];
@@ -36,4 +38,31 @@ int MEDIAN(int *A,int low,int high){
     }
     INSERTION_SORT(first_mids,array_num);
     return first_mids[array_num/2];
+}
+/**just as the QUICKSORT, this is a partition function**/
+/**return a mid location**/
+int PARTION(int *A,int low,int high,int mid){
+    while(low<high){
+        while(high>low&&A[high]>=mid) high--;
+        A[low]=A[high];
+        while(low<high&&A[low]<=mid) low++;
+        A[high]=A[low];
+    }
+    A[low]=mid;
+    return low;
+}
+int SELECT(int *A,int low,int high,int i){
+    if(low==high){
+        return A[low];
+    }
+    int mid_value=MEDIAN(A,low,high);
+    int mid_location=PARTION(A,low,high,mid_value);
+    int k=mid_location-low+1;
+    if(i==k){
+        return A[mid_location];
+    }else if(i<k){
+        return SELECT(A,low,mid_location-1,i);
+    }else{
+        return SELECT(A,mid_location+1,high,i-k);
+    }
 }
