@@ -1,6 +1,6 @@
 #include "Select.h"
 #include <stdlib.h>
-
+#include "Sort.hpp"
 #define STEP 5
 using namespace std;
 /**low,high are the index of the array.The smallest low is 0,the largest high is LENGTH_A-1**/
