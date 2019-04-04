@@ -9,7 +9,7 @@
 using namespace std;
 int main()
 {
-    int p[10]={1,5,8,4,10,23,17,20,89,30};
-    int i=MEDIAN(p,0,9);
-    cout<<i;
+    int p[6]={1,5,8,4,10,23};
+    cout<<SELECT(p,0,5,5)<<endl;
+    view_elem(p,6);
 }

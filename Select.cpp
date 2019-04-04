@@ -42,6 +42,13 @@ int MEDIAN(int *A,int low,int high){
 /**just as the QUICKSORT, this is a partition function**/
 /**return a mid location**/
 int PARTION(int *A,int low,int high,int mid){
+    int i=low;
+    for(;i<=high;i++){
+        if(A[i]==mid) break;
+    }
+    int temp=A[low];
+    A[low]=A[i];
+    A[i]=temp;
     while(low<high){
         while(high>low&&A[high]>=mid) high--;
         A[low]=A[high];
