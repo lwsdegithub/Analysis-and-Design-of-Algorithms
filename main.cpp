@@ -6,10 +6,14 @@
 #include "FindNearestPointPair.hpp"
 #include "DynamicProgramming.hpp"
 #include "Select.h"
+#include "LCS.hpp"
 using namespace std;
 int main()
 {
-    int p[6]={1,5,8,4,10,23};
-    cout<<SELECT(p,0,5,5)<<endl;
-    view_elem(p,6);
+    char *x="10010101";
+    char *y="010110110";
+    int *b=(int *)malloc(sizeof(int)*72);
+    LCS_LENGTH(x,8,y,9,b);
+    PRINT_LCS(b,x,7,8,8);
+    return 0;
 }
